@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futura - Laboratório de Análises Clínicas</title>
+    <title>Future - Lab de Análises Clínicas</title>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="shortcut icon" href="http://futurelaboratorio.com.br/logo.jpg" type="image/x-icon">
@@ -12,19 +12,20 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1>FUTURE</h1>
+                <img src="http://futurelaboratorio.com.br/logo.jpg" alt="FUTURE Laboratório" class="logo-img">
+                <h1 class="sr-only">FUTURE</h1>
                 <p>Laboratório de Análises Clínicas</p>
-                <p>Responsável técnica: Dra. Marcella Barbosa</p>
+                <p>Responsável técnica: <strong>Dra. Marcella Barbosa - CRF/AL 1234</strong></p>
             </div>
             <nav>
-                <ul>
+                <ul class="nav-list">
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#exames">Exames</a></li>
                     <li><a href="#servicos">Serviços</a></li>
                     <li><a href="#convenios">Convênios</a></li>
                     <li><a href="#campanhas">Campanhas</a></li>
-                    <li><a href="#contato">Contato</a></li>
                     <li><a href="#resultados">Resultados</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
                 <div class="menu-mobile">
                     <i class="fas fa-bars"></i>
@@ -53,8 +54,15 @@
                     <h3>Exames Femininos</h3>
                     <ul>
                         <li>Hemograma completo</li>
+                        <li>Lipidograma</li>
                         <li>Glicose</li>
-                        <li>T3, T4 livre, TSH</li>
+                        <li>T3</li>
+                        <li>T4 livre</li>
+                        <li>TSH</li>
+                        <li>FSH</li>
+                        <li>LH</li>
+                        <li>Estradiol</li>
+                        <li>Cortisol</li>
                         <li>Citologia</li>
                         <li>Sumário de urina</li>
                     </ul>
@@ -63,10 +71,13 @@
                     <img src="https://img.freepik.com/fotos-gratis/um-medico-a-tomar-conta-de-uma-crianca-afro-americana_23-2151159922.jpg?uid=R188991667&ga=GA1.1.561515967.1740640690&semt=ais_hybrid&w=740" alt="Exames Masculinos">
                     <h3>Exames Masculinos</h3>
                     <ul>
+                        <li>Hemograma completo</li>
+                        <li>Colesterol total</li>
+                        <li>Colesterol frações</li>
+                        <li>Glicose</li>
+                        <li>Ureia</li>
+                        <li>Creatinina</li>
                         <li>PSA total e livre</li>
-                        <li>Lipidograma</li>
-                        <li>Colesterol total e frações</li>
-                        <li>Ureia e creatina</li>
                         <li>TGO, TGP</li>
                     </ul>
                 </div>
@@ -77,6 +88,7 @@
                         <li>Hemograma completo</li>
                         <li>Glicose</li>
                         <li>Sumário de urina</li>
+                        <li>Colesterol</li>
                         <li>Exame de fezes</li>
                         <li>Triglicerídeos</li>
                     </ul>
@@ -105,12 +117,7 @@
                 </div>
                 <div class="servico-item">
                     <i class="fas fa-heartbeat"></i>
-                    <h3>Mapa e Holter</h3>
-                    <p>Monitoramento cardíaco 24 horas para diagnóstico preciso.</p>
-                </div>
-                <div class="servico-item">
-                    <i class="fas fa-heart"></i>
-                    <h3>ECG</h3>
+                    <h3>ECG, Mapa e Holter</h3>
                     <p>Eletrocardiograma com laudo médico especializado.</p>
                 </div>
             </div>
@@ -120,9 +127,22 @@
         <div class="container">
             <h2>Convênios Aceitos</h2>
             <div class="convenios-grid">
-                <img src="https://img.freepik.com/fotos-gratis/banner-medico-com-estetoscopio_23-2149611199.jpg?uid=R188991667&ga=GA1.1.561515967.1740640690&semt=ais_hybrid&w=740" alt="Convênio 1">
-                <img src="https://img.freepik.com/fotos-gratis/feche-o-medico-com-o-estetoscopio_23-2149191355.jpg?uid=R188991667&ga=GA1.1.561515967.1740640690&semt=ais_hybrid&w=740" alt="Convênio 2">
-                <img src="https://img.freepik.com/fotos-gratis/banner-medico-com-medico-trabalhando-no-laptop_23-2149611211.jpg?uid=R188991667&ga=GA1.1.561515967.1740640690&semt=ais_hybrid&w=740" alt="Convênio 3">
+                <div class="convenio-item">
+                    <img src="img/equipe.jpg" alt="Convênio 1">
+                    <figcaption>BRADESCO SAÚDE</figcaption>
+                </div>
+                <div class="convenio-item">
+                    <img src="img/medica.jpg" alt="Convênio 2">
+                    <figcaption>UNIMED</figcaption>
+                </div>
+                <div class="convenio-item">
+                    <img src="img/equipe2.jpg" alt="Convênio 3">
+                    <figcaption>AMIL</figcaption>
+                </div>
+                <div class="convenio-item">
+                    <img src="img/equipe3.jpg" alt="Convênio 3">
+                    <figcaption>HAPVIDA</figcaption>
+                </div>
             </div>
         </div>
     </section>
@@ -130,7 +150,7 @@
         <div class="container">
             <h2>Campanhas de Saúde</h2>
             <div class="campanha-atual">
-                <img src="https://media.istockphoto.com/id/929003432/pt/foto/autism-awareness-concept-with-colorful-hands-on-white-background-top-view.jpg?b=1&s=612x612&w=0&k=20&c=bc6iPeEESB7VjQQJ6TJ3t7vEsLhYfiWsIiSbYxh9Ixc=" alt="Campanha do Autismo">
+                <img src="/img/autismo.jpg" alt="Campanha do Autismo">
                 <div class="campanha-texto">
                     <h3>Abril - Mês de Conscientização do Autismo</h3>
                     <p>O Futura Laboratório apoia a conscientização sobre o Transtorno do Espectro Autista (TEA). Durante todo o mês de abril, estamos oferecendo condições especiais para exames relacionados ao diagnóstico e acompanhamento do autismo.</p>
@@ -220,12 +240,12 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Future Laboratório de Análises Clínicas. Todos os direitos reservados.</p>
-                <p>Responsável técnica: Dra. Marcella Barbosa - CRF/AL 1234</p>
+                <p>Responsável técnica: <strong>Dra. Marcella Barbosa - CRF/AL 1234</strong></p>
                 <p>Desenvolvido por Jaelson Santos</p>
             </div>
         </div>
     </footer>
 
-    <script src="../js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
